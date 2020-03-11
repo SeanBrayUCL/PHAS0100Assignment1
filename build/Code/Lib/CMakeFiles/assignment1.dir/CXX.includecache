@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgBasicTypes.cpp
+lrgBasicTypes.h
+/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgBasicTypes.h
+
+/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgBasicTypes.h
+lrgWin32ExportHeader.h
+/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgWin32ExportHeader.h
+
+/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgException.cpp
+lrgException.h
+/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgException.h
+
+/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgException.h
+lrgWin32ExportHeader.h
+/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgWin32ExportHeader.h
+stdexcept
+-
+ostream
+-
+sstream
+-
+
+/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgMyFunctions.cpp
+lrgMyFunctions.h
+/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgMyFunctions.h
+iostream
+-
+
+/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgMyFunctions.h
+lrgWin32ExportHeader.h
+/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgWin32ExportHeader.h
+
+/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgWin32ExportHeader.h
+
