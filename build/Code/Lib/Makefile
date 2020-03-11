@@ -236,6 +236,33 @@ lrgException.cpp.s:
 	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgException.cpp.s
 .PHONY : lrgException.cpp.s
 
+lrgLinearDataCreator.o: lrgLinearDataCreator.cpp.o
+
+.PHONY : lrgLinearDataCreator.o
+
+# target to build an object file
+lrgLinearDataCreator.cpp.o:
+	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgLinearDataCreator.cpp.o
+.PHONY : lrgLinearDataCreator.cpp.o
+
+lrgLinearDataCreator.i: lrgLinearDataCreator.cpp.i
+
+.PHONY : lrgLinearDataCreator.i
+
+# target to preprocess a source file
+lrgLinearDataCreator.cpp.i:
+	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgLinearDataCreator.cpp.i
+.PHONY : lrgLinearDataCreator.cpp.i
+
+lrgLinearDataCreator.s: lrgLinearDataCreator.cpp.s
+
+.PHONY : lrgLinearDataCreator.s
+
+# target to generate assembly for a file
+lrgLinearDataCreator.cpp.s:
+	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgLinearDataCreator.cpp.s
+.PHONY : lrgLinearDataCreator.cpp.s
+
 lrgMyFunctions.o: lrgMyFunctions.cpp.o
 
 .PHONY : lrgMyFunctions.o
@@ -283,6 +310,9 @@ help:
 	@echo "... lrgException.o"
 	@echo "... lrgException.i"
 	@echo "... lrgException.s"
+	@echo "... lrgLinearDataCreator.o"
+	@echo "... lrgLinearDataCreator.i"
+	@echo "... lrgLinearDataCreator.s"
 	@echo "... lrgMyFunctions.o"
 	@echo "... lrgMyFunctions.i"
 	@echo "... lrgMyFunctions.s"

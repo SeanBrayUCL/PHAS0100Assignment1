@@ -14,7 +14,7 @@ CostDataFile:
 Site: seanbray-VirtualBox
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Linux-c++
+BuildName: ASSIGNMENT1
 
 # Subprojects
 LabelsForSubprojects: 

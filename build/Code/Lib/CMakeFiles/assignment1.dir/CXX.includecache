@@ -14,6 +14,10 @@ lrgBasicTypes.h
 lrgWin32ExportHeader.h
 /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgWin32ExportHeader.h
 
+/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgDataCreatorI.h
+vector
+-
+
 /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgException.cpp
 lrgException.h
 /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgException.h
@@ -26,6 +30,18 @@ stdexcept
 ostream
 -
 sstream
+-
+
+/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgLinearDataCreator.cpp
+lrgLinearDataCreator.h
+/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgLinearDataCreator.h
+vector
+-
+
+/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgLinearDataCreator.h
+lrgDataCreatorI.h
+/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgDataCreatorI.h
+vector
 -
 
 /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgMyFunctions.cpp

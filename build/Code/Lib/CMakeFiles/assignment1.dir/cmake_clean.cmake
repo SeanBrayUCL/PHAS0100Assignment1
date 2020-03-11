@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/assignment1.dir/lrgBasicTypes.cpp.o"
   "CMakeFiles/assignment1.dir/lrgMyFunctions.cpp.o"
   "CMakeFiles/assignment1.dir/lrgException.cpp.o"
+  "CMakeFiles/assignment1.dir/lrgLinearDataCreator.cpp.o"
   "../../bin/libassignment1.pdb"
   "../../bin/libassignment1.a"
 )
