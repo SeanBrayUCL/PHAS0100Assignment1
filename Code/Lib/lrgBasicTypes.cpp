@@ -1,6 +1,6 @@
 /*=============================================================================
 
-  MYPROJECT: A software package for whatever.
+  ASSIGNMENT1: PHAS0100 Assignment 1.
 
   Copyright (c) University College London (UCL). All rights reserved.
 
@@ -12,16 +12,8 @@
 
 =============================================================================*/
 
-#ifndef mpCatchMain_h
-#define mpCatchMain_h
+#include "lrgBasicTypes.h"
 
-namespace mp
-{
-
-extern int argc;
-extern char** argv;
+namespace lrg {
 
 } // end namespace
-
-#endif
-

@@ -1,6 +1,6 @@
 /*=============================================================================
 
-  MYPROJECT: A software package for whatever.
+  ASSIGNMENT1: PHAS0100 Assignment 1.
 
   Copyright (c) University College London (UCL). All rights reserved.
 
@@ -12,23 +12,23 @@
 
 =============================================================================*/
 
-#ifndef mpMyFunctions_h
-#define mpMyFunctions_h
+#ifndef lrgMyFunctions_h
+#define lrgMyFunctions_h
 
-#include "mpWin32ExportHeader.h"
+#include "lrgWin32ExportHeader.h"
 
 /**
-* \file mpMyFunctions.h
+* \file lrgMyFunctions.h
 * \brief Various Utilities.
 * \ingroup utilities
 */
-namespace mp
+namespace lrg
 {
 
 /**
 * \brief My first function, adds two integers.
 */
-MYPROJECT_WINEXPORT int MyFirstAddFunction(int a, int b);
+ASSIGNMENT1_WINEXPORT int MyFirstAddFunction(int a, int b);
 
 } // end namespace
 

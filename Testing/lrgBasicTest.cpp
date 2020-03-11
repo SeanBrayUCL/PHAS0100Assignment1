@@ -1,6 +1,6 @@
 /*=============================================================================
 
-  MYPROJECT: A software package for whatever.
+  ASSIGNMENT1: PHAS0100 Assignment 1.
 
   Copyright (c) University College London (UCL). All rights reserved.
 
@@ -12,15 +12,22 @@
 
 =============================================================================*/
 
-#include "mpMyFunctions.h"
+#include "catch.hpp"
+#include "lrgCatchMain.h"
+#include "lrgMyFunctions.h"
 #include <iostream>
+#include <vector>
 
-namespace mp {
-
-//-----------------------------------------------------------------------------
-int MyFirstAddFunction(int a, int b)
-{
-  return a + b;
+TEST_CASE( "My first test", "[some group identifier]" ) {
+  int a = 5;
+  REQUIRE( a < 6 );
 }
 
-} // end namespace
+TEST_CASE( "My second test", "[some group identifier]" ) {
+  std::vector<int> a;
+  REQUIRE( a.size() == 0 );
+}
+
+TEST_CASE( "Simple add", "[MyFirstAddFunction]") {
+  REQUIRE( lrg::MyFirstAddFunction(1, 2) == 3);
+}

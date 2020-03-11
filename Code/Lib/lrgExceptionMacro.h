@@ -1,6 +1,6 @@
 /*=============================================================================
 
-  MYPROJECT: A software package for whatever.
+  ASSIGNMENT1: PHAS0100 Assignment 1.
 
   Copyright (c) University College London (UCL). All rights reserved.
 
@@ -12,8 +12,11 @@
 
 =============================================================================*/
 
-#include "mpBasicTypes.h"
+#ifndef lrgExceptionMacro_h
+#define lrgExceptionMacro_h
 
-namespace mp {
+#include "lrgException.h"
 
-} // end namespace
+#define lrgExceptionThrow() throw lrg::Exception(__FILE__,__LINE__)
+
+#endif

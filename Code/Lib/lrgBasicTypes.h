@@ -1,6 +1,6 @@
 /*=============================================================================
 
-  MYPROJECT: A software package for whatever.
+  ASSIGNMENT1: PHAS0100 Assignment 1.
 
   Copyright (c) University College London (UCL). All rights reserved.
 
@@ -12,10 +12,10 @@
 
 =============================================================================*/
 
-#ifndef mpBasicTypes_h
-#define mpBasicTypes_h
+#ifndef lrgBasicTypes_h
+#define lrgBasicTypes_h
 
-#include "mpWin32ExportHeader.h"
+#include "lrgWin32ExportHeader.h"
 
 /**
 * \defgroup internal internal
@@ -38,13 +38,13 @@
 */
 
 /**
-* \file mpBasicTypes.h
+* \file lrgBasicTypes.h
 * \brief Defines types and typedefs used in this library.
 * \ingroup types
 */
 
 //! Single namespace for all code in this package
-namespace mp
+namespace lrg
 {
 
 } // end namespace

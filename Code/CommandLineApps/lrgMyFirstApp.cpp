@@ -1,6 +1,6 @@
 /*=============================================================================
 
-  MYPROJECT: A software package for whatever.
+  ASSIGNMENT1: PHAS0100 Assignment 1.
 
   Copyright (c) University College London (UCL). All rights reserved.
 
@@ -12,8 +12,8 @@
 
 =============================================================================*/
 
-#include <mpMyFunctions.h>
-#include <mpExceptionMacro.h>
+#include <lrgMyFunctions.h>
+#include <lrgExceptionMacro.h>
 #include <iostream>
 
 // Example, header-only library, included in project for simplicity's sake.
@@ -34,13 +34,13 @@ int main(int argc, char** argv)
     Eigen::MatrixXd m(2,2);
     std::cout << "Printing 2x2 Eigen::MatrixXd ..." << std::endl << m << std::endl;
 
-    std::cout << "Calculating ... " << mp::MyFirstAddFunction(1, 2) << std::endl;
+    std::cout << "Calculating ... " << lrg::MyFirstAddFunction(1, 2) << std::endl;
 
     returnStatus = EXIT_SUCCESS;
   }
-  catch (mp::Exception& e)
+  catch (lrg::Exception& e)
   {
-    std::cerr << "Caught mp::Exception: " << e.GetDescription() << std::endl;
+    std::cerr << "Caught lrg::Exception: " << e.GetDescription() << std::endl;
   }
   catch (std::exception& e)
   {

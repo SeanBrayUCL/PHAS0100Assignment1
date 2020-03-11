@@ -1,6 +1,6 @@
 /*=============================================================================
 
-  MYPROJECT: A software package for whatever.
+  ASSIGNMENT1: PHAS0100 Assignment 1.
 
   Copyright (c) University College London (UCL). All rights reserved.
 
@@ -12,17 +12,16 @@
 
 =============================================================================*/
 
-#include "catch.hpp"
-#include "mpCatchMain.h"
-#include <iostream>
+#ifndef lrgCatchMain_h
+#define lrgCatchMain_h
 
-TEST_CASE( "My first test", "[init]" ) {
+namespace lrg
+{
 
-  int expectedNumberOfArgs = 2;
-  if (mp::argc != expectedNumberOfArgs)
-  {
-    std::cerr << "Usage: mpMyFirstCatchTest fileName.txt" << std::endl;
-    REQUIRE( mp::argc == expectedNumberOfArgs);
-  }
-  REQUIRE(true);
-}
+extern int argc;
+extern char** argv;
+
+} // end namespace
+
+#endif
+

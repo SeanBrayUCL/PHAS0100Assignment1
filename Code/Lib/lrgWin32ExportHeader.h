@@ -1,6 +1,6 @@
 /*=============================================================================
 
-  MYPROJECT: A software package for whatever.
+  ASSIGNMENT1: PHAS0100 Assignment 1.
 
   Copyright (c) University College London (UCL). All rights reserved.
 
@@ -12,23 +12,23 @@
 
 =============================================================================*/
 
-#ifndef mpWin32ExportHeader_h
-#define mpWin32ExportHeader_h
+#ifndef lrgWin32ExportHeader_h
+#define lrgWin32ExportHeader_h
 
 /**
-* \file mpWin32ExportHeader.h
+* \file lrgWin32ExportHeader.h
 * \brief Header to sort Windows dllexport/dllimport.
 */
 
-#if (defined(_WIN32) || defined(WIN32)) && !defined(MYPROJECT_STATIC)
-  #ifdef MYPROJECT_WINDOWS_EXPORT
-    #define MYPROJECT_WINEXPORT __declspec(dllexport)
+#if (defined(_WIN32) || defined(WIN32)) && !defined(ASSIGNMENT1_STATIC)
+  #ifdef ASSIGNMENT1_WINDOWS_EXPORT
+    #define ASSIGNMENT1_WINEXPORT __declspec(dllexport)
   #else
-    #define MYPROJECT_WINEXPORT __declspec(dllimport)
-  #endif  /* MYPROJECT_WINEXPORT */
+    #define ASSIGNMENT1_WINEXPORT __declspec(dllimport)
+  #endif  /* ASSIGNMENT1_WINEXPORT */
 #else
 /* linux/mac needs nothing */
-  #define MYPROJECT_WINEXPORT
+  #define ASSIGNMENT1_WINEXPORT
 #endif
 
 #endif

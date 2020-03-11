@@ -1,6 +1,6 @@
 /*=============================================================================
 
-  MYPROJECT: A software package for whatever.
+  ASSIGNMENT1: PHAS0100 Assignment 1.
 
   Copyright (c) University College London (UCL). All rights reserved.
 
@@ -12,22 +12,22 @@
 
 =============================================================================*/
 
-#ifndef mpException_h
-#define mpException_h
+#ifndef lrgException_h
+#define lrgException_h
 
-#include "mpWin32ExportHeader.h"
+#include "lrgWin32ExportHeader.h"
 #include <stdexcept>
 #include <ostream>
 #include <sstream>
 
-namespace mp {
+namespace lrg {
 
 /**
 * \class Exception
 * \brief Base exception class.
 * \ingroup types
 */
-class MYPROJECT_WINEXPORT Exception : public std::exception
+class ASSIGNMENT1_WINEXPORT Exception : public std::exception
 {
 public:
 

@@ -1,6 +1,6 @@
 #/*============================================================================
 #
-#  MYPROJECT: A software package for whatever.
+#  ASSIGNMENT1: PHAS0100 Assignment 1.
 #
 #  Copyright (c) University College London (UCL). All rights reserved.
 #
@@ -15,8 +15,8 @@
 ######################################################################
 # Set the minimum CMake version.
 ######################################################################
-set(MYPROJECT_CMAKE_MINIMUM_REQUIRED_VERSION 3.5)
-cmake_minimum_required(VERSION ${MYPROJECT_CMAKE_MINIMUM_REQUIRED_VERSION})
+set(ASSIGNMENT1_CMAKE_MINIMUM_REQUIRED_VERSION 3.5)
+cmake_minimum_required(VERSION ${ASSIGNMENT1_CMAKE_MINIMUM_REQUIRED_VERSION})
 
 
 ###################################################################################
@@ -34,7 +34,7 @@ endforeach()
 ###############################################################################
 # Setup project name, and version.
 ###############################################################################
-project(MYPROJECT VERSION 0.0.0)
+project(ASSIGNMENT1 VERSION 0.0.0)
 
 
 ######################################################################
@@ -60,7 +60,7 @@ option(BUILD_SHARED_LIBS "Build Shared Libraries" OFF)
 ######################################################################
 # Setup Testing (dashboards etc.).
 ######################################################################
-include(mpSetupTesting)
+include(lrgSetupTesting)
 
 
 ######################################################################
@@ -87,27 +87,27 @@ endif()
 ######################################################################
 # Choose C++ standard. Currently 11, as we try to support VS2013.
 ######################################################################
-set(MYPROJECT_CXX_STANDARD 11)
+set(ASSIGNMENT1_CXX_STANDARD 11)
 set(CMAKE_CXX_EXTENSIONS 0)
-set(CMAKE_CXX_STANDARD ${MYPROJECT_CXX_STANDARD})
+set(CMAKE_CXX_STANDARD ${ASSIGNMENT1_CXX_STANDARD})
 set(CMAKE_CXX_STANDARD_REQUIRED 1)
 
 # This is necessary to avoid problems with compile feature checks.
 # CMAKE_CXX_STANDARD seems to only set the -std=c++11 flag for targets.
 # However, compile flag checks also need to be done with -std=c++11.
-# The MYPROJECT_CXX11_FLAG variable is also used for external projects
-# build during the MYPROJECT super-build.
-mitkFunctionCheckCompilerFlags("-std=c++11" MYPROJECT_CXX11_FLAG)
-if(NOT MYPROJECT_CXX11_FLAG)
+# The ASSIGNMENT1_CXX11_FLAG variable is also used for external projects
+# build during the ASSIGNMENT1 super-build.
+mitkFunctionCheckCompilerFlags("-std=c++11" ASSIGNMENT1_CXX11_FLAG)
+if(NOT ASSIGNMENT1_CXX11_FLAG)
   # Older gcc compilers use -std=c++0x
-  mitkFunctionCheckCompilerFlags("-std=c++0x" MYPROJECT_CXX11_FLAG)
+  mitkFunctionCheckCompilerFlags("-std=c++0x" ASSIGNMENT1_CXX11_FLAG)
 endif()
 
 
 ######################################################################
 # Force MSVC runtime. Depends on BUILD_SHARED_LIBS.
 ######################################################################
-include(mpSetupMSVCRuntime)
+include(lrgSetupMSVCRuntime)
 
 
 ######################################################################
@@ -157,13 +157,13 @@ if(WIN32)
 endif(WIN32)
 
 if(WIN32 AND NOT BUILD_SHARED_LIBS)
-  add_definitions(-DMYPROJECT_STATIC)
+  add_definitions(-DASSIGNMENT1_STATIC)
 endif()
 
 if(UNIX)
-  mitkFunctionCheckCompilerFlags("-Wno-deprecated-declarations" MYPROJECT_NO_DEPRECATED_FLAG)
-  if(MYPROJECT_NO_DEPRECATED_FLAG)
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${MYPROJECT_NO_DEPRECATED_FLAG}" CACHE STRING "FLags used by the compiler during all build types." FORCE)
+  mitkFunctionCheckCompilerFlags("-Wno-deprecated-declarations" ASSIGNMENT1_NO_DEPRECATED_FLAG)
+  if(ASSIGNMENT1_NO_DEPRECATED_FLAG)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${ASSIGNMENT1_NO_DEPRECATED_FLAG}" CACHE STRING "FLags used by the compiler during all build types." FORCE)
   endif()
 endif()
 
@@ -171,17 +171,17 @@ endif()
 ######################################################################
 # A few shortcuts for lists of libraries.
 ######################################################################
-set(MYPROJECT_LIBRARIES myproject)
-set(ALL_LIBRARIES ${MYPROJECT_LIBRARIES})
+set(ASSIGNMENT1_LIBRARIES assignment1)
+set(ALL_LIBRARIES ${ASSIGNMENT1_LIBRARIES})
 
 
 ######################################################################
 # Set up a few paths.
 ######################################################################
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/bin)
-set(MYPROJECT_INSTALL_LIB_DIR lib)
-set(MYPROJECT_INSTALL_INC_DIR include)
-set(MYPROJECT_INSTALL_BIN_DIR bin)
+set(ASSIGNMENT1_INSTALL_LIB_DIR lib)
+set(ASSIGNMENT1_INSTALL_INC_DIR include)
+set(ASSIGNMENT1_INSTALL_BIN_DIR bin)
 
 foreach(type LIBRARY RUNTIME ARCHIVE)
   set(output_dir ${CMAKE_BINARY_DIR}/bin)

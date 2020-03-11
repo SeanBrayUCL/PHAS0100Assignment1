@@ -1,6 +1,6 @@
 /*=============================================================================
 
-  MYPROJECT: A software package for whatever.
+  ASSIGNMENT1: PHAS0100 Assignment 1.
 
   Copyright (c) University College London (UCL). All rights reserved.
 
@@ -13,21 +13,16 @@
 =============================================================================*/
 
 #include "catch.hpp"
-#include "mpCatchMain.h"
-#include "mpMyFunctions.h"
+#include "lrgCatchMain.h"
 #include <iostream>
-#include <vector>
 
-TEST_CASE( "My first test", "[some group identifier]" ) {
-  int a = 5;
-  REQUIRE( a < 6 );
-}
+TEST_CASE( "My first test", "[init]" ) {
 
-TEST_CASE( "My second test", "[some group identifier]" ) {
-  std::vector<int> a;
-  REQUIRE( a.size() == 0 );
-}
-
-TEST_CASE( "Simple add", "[MyFirstAddFunction]") {
-  REQUIRE( mp::MyFirstAddFunction(1, 2) == 3);
+  int expectedNumberOfArgs = 2;
+  if (lrg::argc != expectedNumberOfArgs)
+  {
+    std::cerr << "Usage: mpMyFirstCatchTest fileName.txt" << std::endl;
+    REQUIRE( lrg::argc == expectedNumberOfArgs);
+  }
+  REQUIRE(true);
 }

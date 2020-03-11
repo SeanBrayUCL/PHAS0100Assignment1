@@ -1,6 +1,6 @@
 #/*============================================================================
 #
-#  MYPROJECT: A software package for whatever.
+#  ASSIGNMENT1: PHAS0100 Assignment 1.
 #
 #  Copyright (c) University College London (UCL). All rights reserved.
 #
@@ -13,10 +13,10 @@
 #============================================================================*/
 
 set(_command_line_apps
-  mpMyFirstApp
+  lrgMyFirstApp
 )
 
 foreach(_app ${_command_line_apps})
   add_executable(${_app} ${_app}.cpp)
-  target_link_libraries(${_app} ${MYPROJECT_LIBRARIES} ${ALL_THIRD_PARTY_LIBRARIES})
+  target_link_libraries(${_app} ${ASSIGNMENT1_LIBRARIES} ${ALL_THIRD_PARTY_LIBRARIES})
 endforeach()

@@ -1,6 +1,6 @@
 /*=============================================================================
 
-  MYPROJECT: A software package for whatever.
+  ASSIGNMENT1: PHAS0100 Assignment 1.
 
   Copyright (c) University College London (UCL). All rights reserved.
 
@@ -12,11 +12,15 @@
 
 =============================================================================*/
 
-#ifndef mpExceptionMacro_h
-#define mpExceptionMacro_h
+#include "lrgMyFunctions.h"
+#include <iostream>
 
-#include "mpException.h"
+namespace lrg {
 
-#define mpExceptionThrow() throw mp::Exception(__FILE__,__LINE__)
+//-----------------------------------------------------------------------------
+int MyFirstAddFunction(int a, int b)
+{
+  return a + b;
+}
 
-#endif
+} // end namespace

@@ -1,7 +1,7 @@
-CMakeCatch2
+Assignment1
 ------------------
 
-[![Build Status](https://travis-ci.com/MattClarkson/CMakeCatch2.svg?branch=master)](https://travis-ci.com/MattClarkson/CMakeCatch2)
+[![Build Status](https://travis-ci.com/MattClarkson/Assignment1.svg?branch=master)](https://travis-ci.com/MattClarkson/Assignment1)
 [![Build Status](https://ci.appveyor.com/api/projects/status/5pm89ej732c1ekf0/branch/master)](https://ci.appveyor.com/project/MattClarkson/cmakecatch2)
 
 
@@ -25,10 +25,10 @@ Build Instructions
 This project itself can be built if you just want to test it. In Linux terms that
 would be:
 ``` cmake
-git clone https://github.com/MattClarkson/CMakeCatch2
-mkdir CMakeCatch2-Build
-cd CMakeCatch2-Build
-cmake ../CMakeCatch2
+git clone https://github.com/MattClarkson/Assignment1
+mkdir Assignment1-Build
+cd Assignment1-Build
+cmake ../Assignment1
 make
 ```
 But ideally, you should use this as a template to create your own project. To do so,

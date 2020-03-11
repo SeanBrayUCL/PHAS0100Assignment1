@@ -1,6 +1,6 @@
 #/*============================================================================
 #
-#  MYPROJECT: A software package for whatever.
+#  ASSIGNMENT1: PHAS0100 Assignment 1.
 #
 #  Copyright (c) University College London (UCL). All rights reserved.
 #
@@ -12,25 +12,25 @@
 #
 #============================================================================*/
 
-set(MYPROJECT_LIBRARY_NAME myproject)
+set(ASSIGNMENT1_LIBRARY_NAME assignment1)
 
-set(MYPROJECT_LIBRARY_SRCS
-  mpBasicTypes.cpp
-  mpMyFunctions.cpp
-  mpException.cpp
+set(ASSIGNMENT1_LIBRARY_SRCS
+  lrgBasicTypes.cpp
+  lrgMyFunctions.cpp
+  lrgException.cpp
 )
 
-set(MYPROJECT_LIBRARY_HDRS
-  mpExceptionMacro.h
+set(ASSIGNMENT1_LIBRARY_HDRS
+  lrgExceptionMacro.h
 )
 
-add_library(${MYPROJECT_LIBRARY_NAME} ${MYPROJECT_LIBRARY_HDRS} ${MYPROJECT_LIBRARY_SRCS})
+add_library(${ASSIGNMENT1_LIBRARY_NAME} ${ASSIGNMENT1_LIBRARY_HDRS} ${ASSIGNMENT1_LIBRARY_SRCS})
 
 if(BUILD_SHARED_LIBS)
   if(WIN32)
-    add_definitions(-DMYPROJECT_WINDOWS_EXPORT)
+    add_definitions(-DASSIGNMENT1_WINDOWS_EXPORT)
   endif(WIN32)
 endif(BUILD_SHARED_LIBS)
 
-target_link_libraries(${MYPROJECT_LIBRARY_NAME} PRIVATE ${ALL_THIRD_PARTY_LIBRARIES})
+target_link_libraries(${ASSIGNMENT1_LIBRARY_NAME} PRIVATE ${ALL_THIRD_PARTY_LIBRARIES})
 
