@@ -18,6 +18,7 @@ set(ASSIGNMENT1_LIBRARY_SRCS
   lrgBasicTypes.cpp
   lrgMyFunctions.cpp
   lrgException.cpp
+  lrgLinearDataCreator.cpp
 )
 
 set(ASSIGNMENT1_LIBRARY_HDRS
