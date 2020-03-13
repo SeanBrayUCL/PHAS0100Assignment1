@@ -290,6 +290,33 @@ lrgMyFunctions.cpp.s:
 	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgMyFunctions.cpp.s
 .PHONY : lrgMyFunctions.cpp.s
 
+lrgNormalEquationsSolverStrategy.o: lrgNormalEquationsSolverStrategy.cpp.o
+
+.PHONY : lrgNormalEquationsSolverStrategy.o
+
+# target to build an object file
+lrgNormalEquationsSolverStrategy.cpp.o:
+	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgNormalEquationsSolverStrategy.cpp.o
+.PHONY : lrgNormalEquationsSolverStrategy.cpp.o
+
+lrgNormalEquationsSolverStrategy.i: lrgNormalEquationsSolverStrategy.cpp.i
+
+.PHONY : lrgNormalEquationsSolverStrategy.i
+
+# target to preprocess a source file
+lrgNormalEquationsSolverStrategy.cpp.i:
+	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgNormalEquationsSolverStrategy.cpp.i
+.PHONY : lrgNormalEquationsSolverStrategy.cpp.i
+
+lrgNormalEquationsSolverStrategy.s: lrgNormalEquationsSolverStrategy.cpp.s
+
+.PHONY : lrgNormalEquationsSolverStrategy.s
+
+# target to generate assembly for a file
+lrgNormalEquationsSolverStrategy.cpp.s:
+	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgNormalEquationsSolverStrategy.cpp.s
+.PHONY : lrgNormalEquationsSolverStrategy.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -316,6 +343,9 @@ help:
 	@echo "... lrgMyFunctions.o"
 	@echo "... lrgMyFunctions.i"
 	@echo "... lrgMyFunctions.s"
+	@echo "... lrgNormalEquationsSolverStrategy.o"
+	@echo "... lrgNormalEquationsSolverStrategy.i"
+	@echo "... lrgNormalEquationsSolverStrategy.s"
 .PHONY : help
 
 

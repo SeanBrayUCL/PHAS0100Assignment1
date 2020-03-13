@@ -16,6 +16,16 @@ lrgDataCreatorI.h
 vector
 -
 
+../Code/Lib/lrgLinearModelSolverStrategyI.h
+vector
+-
+
+../Code/Lib/lrgNormalEquationsSolverStrategy.h
+lrgLinearModelSolverStrategyI.h
+../Code/Lib/lrgLinearModelSolverStrategyI.h
+vector
+-
+
 /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Testing/catch.hpp
 TargetConditionals.h
 -
@@ -419,6 +429,8 @@ lrgCatchMain.h
 /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Testing/lrgCatchMain.h
 lrgLinearDataCreator.h
 /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Testing/lrgLinearDataCreator.h
+lrgNormalEquationsSolverStrategy.h
+/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Testing/lrgNormalEquationsSolverStrategy.h
 iostream
 -
 vector

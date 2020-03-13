@@ -15,11 +15,15 @@
 #include "catch.hpp"
 #include "lrgCatchMain.h"
 #include "lrgLinearDataCreator.h"
+#include "lrgNormalEquationsSolverStrategy.h"
 #include <iostream>
 #include <vector>
 
  LinearDataCreator data(2,100,10);
+ NormalEquationsSolverStrategy output;
  std::vector<double> xvec;
+
+
  
 TEST_CASE( "Checking the number of returned items is correct", "[LinearDataCreator.GetData()]" ) {
   REQUIRE( data.GetData().size() == 10); 

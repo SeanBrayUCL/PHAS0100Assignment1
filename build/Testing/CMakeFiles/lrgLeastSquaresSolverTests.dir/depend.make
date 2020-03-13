@@ -7,6 +7,8 @@ Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/lrgCatchMain.cpp.o: ../Testing
 
 Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/lrgLeastSquaresSolverTests.cpp.o: ../Code/Lib/lrgDataCreatorI.h
 Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/lrgLeastSquaresSolverTests.cpp.o: ../Code/Lib/lrgLinearDataCreator.h
+Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/lrgLeastSquaresSolverTests.cpp.o: ../Code/Lib/lrgLinearModelSolverStrategyI.h
+Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/lrgLeastSquaresSolverTests.cpp.o: ../Code/Lib/lrgNormalEquationsSolverStrategy.h
 Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/lrgLeastSquaresSolverTests.cpp.o: ../Testing/catch.hpp
 Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/lrgLeastSquaresSolverTests.cpp.o: ../Testing/lrgCatchMain.h
 Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/lrgLeastSquaresSolverTests.cpp.o: ../Testing/lrgLeastSquaresSolverTests.cpp

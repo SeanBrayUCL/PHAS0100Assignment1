@@ -8,6 +8,8 @@ Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/lrgCatchMain.cpp.o
 Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/lrgLeastSquaresSolverTests.cpp.o
  ../Code/Lib/lrgDataCreatorI.h
  ../Code/Lib/lrgLinearDataCreator.h
+ ../Code/Lib/lrgLinearModelSolverStrategyI.h
+ ../Code/Lib/lrgNormalEquationsSolverStrategy.h
  /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Testing/catch.hpp
  /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Testing/lrgCatchMain.h
  /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Testing/lrgLeastSquaresSolverTests.cpp

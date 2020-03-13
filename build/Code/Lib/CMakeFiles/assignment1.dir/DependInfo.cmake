@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgException.cpp" "/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/Code/Lib/CMakeFiles/assignment1.dir/lrgException.cpp.o"
   "/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgLinearDataCreator.cpp" "/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/Code/Lib/CMakeFiles/assignment1.dir/lrgLinearDataCreator.cpp.o"
   "/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgMyFunctions.cpp" "/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/Code/Lib/CMakeFiles/assignment1.dir/lrgMyFunctions.cpp.o"
+  "/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgNormalEquationsSolverStrategy.cpp" "/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/Code/Lib/CMakeFiles/assignment1.dir/lrgNormalEquationsSolverStrategy.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
