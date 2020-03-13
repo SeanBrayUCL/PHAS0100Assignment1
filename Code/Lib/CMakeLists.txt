@@ -24,6 +24,7 @@ set(ASSIGNMENT1_LIBRARY_SRCS
 set(ASSIGNMENT1_LIBRARY_HDRS
   lrgExceptionMacro.h
   lrgDataCreatorI.h
+  lrgLinearModelSolverStrategyI
 )
 
 add_library(${ASSIGNMENT1_LIBRARY_NAME} ${ASSIGNMENT1_LIBRARY_HDRS} ${ASSIGNMENT1_LIBRARY_SRCS})
