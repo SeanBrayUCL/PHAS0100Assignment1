@@ -1042,6 +1042,24 @@ ostream
 sstream
 -
 
+/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgGradientDescentSolverStrategy.cpp
+lrgGradientDescentSolverStrategy.h
+/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgGradientDescentSolverStrategy.h
+vector
+-
+algorithm
+-
+random
+-
+
+/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgGradientDescentSolverStrategy.h
+lrgLinearModelSolverStrategyI.h
+/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgLinearModelSolverStrategyI.h
+vector
+-
+Eigen/Dense
+-
+
 /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgLinearDataCreator.cpp
 lrgLinearDataCreator.h
 /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgLinearDataCreator.h
