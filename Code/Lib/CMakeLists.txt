@@ -18,10 +18,12 @@ set(ASSIGNMENT1_LIBRARY_SRCS
   lrgBasicTypes.cpp
   lrgMyFunctions.cpp
   lrgException.cpp
+  lrgLinearDataCreator.cpp
 )
 
 set(ASSIGNMENT1_LIBRARY_HDRS
   lrgExceptionMacro.h
+  lrgDataCreatorI.h
 )
 
 add_library(${ASSIGNMENT1_LIBRARY_NAME} ${ASSIGNMENT1_LIBRARY_HDRS} ${ASSIGNMENT1_LIBRARY_SRCS})

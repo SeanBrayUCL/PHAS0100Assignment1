@@ -58,10 +58,11 @@
 /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/Code/CommandLineApps/CMakeFiles/install.dir
 /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/Testing/CMakeFiles/install/strip.dir
 /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/Testing/CMakeFiles/install.dir
+/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/Testing/CMakeFiles/list_install_components.dir
 /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/Testing/CMakeFiles/lrgCommandLineArgsTest.dir
 /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/Testing/CMakeFiles/edit_cache.dir
 /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/Testing/CMakeFiles/lrgBasicTest.dir
+/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir
 /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/Testing/CMakeFiles/install/local.dir
 /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/Testing/CMakeFiles/test.dir
-/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/Testing/CMakeFiles/list_install_components.dir
 /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/Testing/CMakeFiles/rebuild_cache.dir

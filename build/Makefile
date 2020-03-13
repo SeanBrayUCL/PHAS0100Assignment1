@@ -583,6 +583,19 @@ lrgBasicTest/fast:
 	$(MAKE) -f Testing/CMakeFiles/lrgBasicTest.dir/build.make Testing/CMakeFiles/lrgBasicTest.dir/build
 .PHONY : lrgBasicTest/fast
 
+#=============================================================================
+# Target rules for targets named lrgLeastSquaresSolverTests
+
+# Build rule for target.
+lrgLeastSquaresSolverTests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lrgLeastSquaresSolverTests
+.PHONY : lrgLeastSquaresSolverTests
+
+# fast build rule for target.
+lrgLeastSquaresSolverTests/fast:
+	$(MAKE) -f Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/build.make Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/build
+.PHONY : lrgLeastSquaresSolverTests/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -628,6 +641,7 @@ help:
 	@echo "... lrgMyFirstApp"
 	@echo "... lrgCommandLineArgsTest"
 	@echo "... lrgBasicTest"
+	@echo "... lrgLeastSquaresSolverTests"
 .PHONY : help
 
 

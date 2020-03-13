@@ -9,6 +9,10 @@ Code/Lib/CMakeFiles/assignment1.dir/lrgException.cpp.o
  /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgException.cpp
  /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgException.h
  /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgWin32ExportHeader.h
+Code/Lib/CMakeFiles/assignment1.dir/lrgLinearDataCreator.cpp.o
+ /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgDataCreatorI.h
+ /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgLinearDataCreator.cpp
+ /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgLinearDataCreator.h
 Code/Lib/CMakeFiles/assignment1.dir/lrgMyFunctions.cpp.o
  /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgMyFunctions.cpp
  /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgMyFunctions.h

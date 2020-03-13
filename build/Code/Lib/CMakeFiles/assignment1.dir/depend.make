@@ -9,6 +9,10 @@ Code/Lib/CMakeFiles/assignment1.dir/lrgException.cpp.o: ../Code/Lib/lrgException
 Code/Lib/CMakeFiles/assignment1.dir/lrgException.cpp.o: ../Code/Lib/lrgException.h
 Code/Lib/CMakeFiles/assignment1.dir/lrgException.cpp.o: ../Code/Lib/lrgWin32ExportHeader.h
 
+Code/Lib/CMakeFiles/assignment1.dir/lrgLinearDataCreator.cpp.o: ../Code/Lib/lrgDataCreatorI.h
+Code/Lib/CMakeFiles/assignment1.dir/lrgLinearDataCreator.cpp.o: ../Code/Lib/lrgLinearDataCreator.cpp
+Code/Lib/CMakeFiles/assignment1.dir/lrgLinearDataCreator.cpp.o: ../Code/Lib/lrgLinearDataCreator.h
+
 Code/Lib/CMakeFiles/assignment1.dir/lrgMyFunctions.cpp.o: ../Code/Lib/lrgMyFunctions.cpp
 Code/Lib/CMakeFiles/assignment1.dir/lrgMyFunctions.cpp.o: ../Code/Lib/lrgMyFunctions.h
 Code/Lib/CMakeFiles/assignment1.dir/lrgMyFunctions.cpp.o: ../Code/Lib/lrgWin32ExportHeader.h
