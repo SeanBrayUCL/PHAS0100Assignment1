@@ -236,6 +236,60 @@ lrgException.cpp.s:
 	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgException.cpp.s
 .PHONY : lrgException.cpp.s
 
+lrgFileLoaderDataCreator.o: lrgFileLoaderDataCreator.cpp.o
+
+.PHONY : lrgFileLoaderDataCreator.o
+
+# target to build an object file
+lrgFileLoaderDataCreator.cpp.o:
+	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgFileLoaderDataCreator.cpp.o
+.PHONY : lrgFileLoaderDataCreator.cpp.o
+
+lrgFileLoaderDataCreator.i: lrgFileLoaderDataCreator.cpp.i
+
+.PHONY : lrgFileLoaderDataCreator.i
+
+# target to preprocess a source file
+lrgFileLoaderDataCreator.cpp.i:
+	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgFileLoaderDataCreator.cpp.i
+.PHONY : lrgFileLoaderDataCreator.cpp.i
+
+lrgFileLoaderDataCreator.s: lrgFileLoaderDataCreator.cpp.s
+
+.PHONY : lrgFileLoaderDataCreator.s
+
+# target to generate assembly for a file
+lrgFileLoaderDataCreator.cpp.s:
+	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgFileLoaderDataCreator.cpp.s
+.PHONY : lrgFileLoaderDataCreator.cpp.s
+
+lrgGradientDescentSolverStrategy.o: lrgGradientDescentSolverStrategy.cpp.o
+
+.PHONY : lrgGradientDescentSolverStrategy.o
+
+# target to build an object file
+lrgGradientDescentSolverStrategy.cpp.o:
+	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgGradientDescentSolverStrategy.cpp.o
+.PHONY : lrgGradientDescentSolverStrategy.cpp.o
+
+lrgGradientDescentSolverStrategy.i: lrgGradientDescentSolverStrategy.cpp.i
+
+.PHONY : lrgGradientDescentSolverStrategy.i
+
+# target to preprocess a source file
+lrgGradientDescentSolverStrategy.cpp.i:
+	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgGradientDescentSolverStrategy.cpp.i
+.PHONY : lrgGradientDescentSolverStrategy.cpp.i
+
+lrgGradientDescentSolverStrategy.s: lrgGradientDescentSolverStrategy.cpp.s
+
+.PHONY : lrgGradientDescentSolverStrategy.s
+
+# target to generate assembly for a file
+lrgGradientDescentSolverStrategy.cpp.s:
+	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgGradientDescentSolverStrategy.cpp.s
+.PHONY : lrgGradientDescentSolverStrategy.cpp.s
+
 lrgLinearDataCreator.o: lrgLinearDataCreator.cpp.o
 
 .PHONY : lrgLinearDataCreator.o
@@ -290,6 +344,33 @@ lrgMyFunctions.cpp.s:
 	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgMyFunctions.cpp.s
 .PHONY : lrgMyFunctions.cpp.s
 
+lrgNormalEquationsSolverStrategy.o: lrgNormalEquationsSolverStrategy.cpp.o
+
+.PHONY : lrgNormalEquationsSolverStrategy.o
+
+# target to build an object file
+lrgNormalEquationsSolverStrategy.cpp.o:
+	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgNormalEquationsSolverStrategy.cpp.o
+.PHONY : lrgNormalEquationsSolverStrategy.cpp.o
+
+lrgNormalEquationsSolverStrategy.i: lrgNormalEquationsSolverStrategy.cpp.i
+
+.PHONY : lrgNormalEquationsSolverStrategy.i
+
+# target to preprocess a source file
+lrgNormalEquationsSolverStrategy.cpp.i:
+	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgNormalEquationsSolverStrategy.cpp.i
+.PHONY : lrgNormalEquationsSolverStrategy.cpp.i
+
+lrgNormalEquationsSolverStrategy.s: lrgNormalEquationsSolverStrategy.cpp.s
+
+.PHONY : lrgNormalEquationsSolverStrategy.s
+
+# target to generate assembly for a file
+lrgNormalEquationsSolverStrategy.cpp.s:
+	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgNormalEquationsSolverStrategy.cpp.s
+.PHONY : lrgNormalEquationsSolverStrategy.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -310,12 +391,21 @@ help:
 	@echo "... lrgException.o"
 	@echo "... lrgException.i"
 	@echo "... lrgException.s"
+	@echo "... lrgFileLoaderDataCreator.o"
+	@echo "... lrgFileLoaderDataCreator.i"
+	@echo "... lrgFileLoaderDataCreator.s"
+	@echo "... lrgGradientDescentSolverStrategy.o"
+	@echo "... lrgGradientDescentSolverStrategy.i"
+	@echo "... lrgGradientDescentSolverStrategy.s"
 	@echo "... lrgLinearDataCreator.o"
 	@echo "... lrgLinearDataCreator.i"
 	@echo "... lrgLinearDataCreator.s"
 	@echo "... lrgMyFunctions.o"
 	@echo "... lrgMyFunctions.i"
 	@echo "... lrgMyFunctions.s"
+	@echo "... lrgNormalEquationsSolverStrategy.o"
+	@echo "... lrgNormalEquationsSolverStrategy.i"
+	@echo "... lrgNormalEquationsSolverStrategy.s"
 .PHONY : help
 
 

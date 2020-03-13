@@ -19,11 +19,15 @@ set(ASSIGNMENT1_LIBRARY_SRCS
   lrgMyFunctions.cpp
   lrgException.cpp
   lrgLinearDataCreator.cpp
+  lrgNormalEquationsSolverStrategy.cpp
+  lrgGradientDescentSolverStrategy.cpp
+  lrgFileLoaderDataCreator.cpp
 )
 
 set(ASSIGNMENT1_LIBRARY_HDRS
   lrgExceptionMacro.h
   lrgDataCreatorI.h
+  lrgLinearModelSolverStrategyI
 )
 
 add_library(${ASSIGNMENT1_LIBRARY_NAME} ${ASSIGNMENT1_LIBRARY_HDRS} ${ASSIGNMENT1_LIBRARY_SRCS})

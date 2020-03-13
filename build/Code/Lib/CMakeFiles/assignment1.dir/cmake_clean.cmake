@@ -3,6 +3,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/assignment1.dir/lrgMyFunctions.cpp.o"
   "CMakeFiles/assignment1.dir/lrgException.cpp.o"
   "CMakeFiles/assignment1.dir/lrgLinearDataCreator.cpp.o"
+  "CMakeFiles/assignment1.dir/lrgNormalEquationsSolverStrategy.cpp.o"
+  "CMakeFiles/assignment1.dir/lrgGradientDescentSolverStrategy.cpp.o"
+  "CMakeFiles/assignment1.dir/lrgFileLoaderDataCreator.cpp.o"
   "../../bin/libassignment1.pdb"
   "../../bin/libassignment1.a"
 )
