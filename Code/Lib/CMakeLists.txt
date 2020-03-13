@@ -19,6 +19,7 @@ set(ASSIGNMENT1_LIBRARY_SRCS
   lrgMyFunctions.cpp
   lrgException.cpp
   lrgLinearDataCreator.cpp
+  lrgNormalEquationsSolverStrategy.cpp
 )
 
 set(ASSIGNMENT1_LIBRARY_HDRS
