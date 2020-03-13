@@ -11,13 +11,13 @@ std ::pair<double, double>  NormalEquationsSolverStrategy::FitData(std::vector<s
  std::vector< std::pair <double,double> > input;
  Eigen::MatrixXd m(x.size(),2);
  Eigen::VectorXd y(x.size());
- Eigen::MatrixXd res(1,1);
+ Eigen::MatrixXd res(2,1);
 
  for (int i=0; i<x.size(); i++) 
         m(i,0) = ones[i];
  
  for (int i=0; i<x.size(); i++) 
-        m(0,i) = x[i].first;
+        m(i,1) = x[i].first;
  
  for (int i=0; i<x.size(); i++) 
         y(i) = x[i].second;
