@@ -21,6 +21,7 @@ set(ASSIGNMENT1_LIBRARY_SRCS
   lrgLinearDataCreator.cpp
   lrgNormalEquationsSolverStrategy.cpp
   lrgGradientDescentSolverStrategy.cpp
+  lrgFileLoaderDataCreator.cpp
 )
 
 set(ASSIGNMENT1_LIBRARY_HDRS

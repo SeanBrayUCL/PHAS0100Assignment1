@@ -236,6 +236,33 @@ lrgException.cpp.s:
 	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgException.cpp.s
 .PHONY : lrgException.cpp.s
 
+lrgFileLoaderDataCreator.o: lrgFileLoaderDataCreator.cpp.o
+
+.PHONY : lrgFileLoaderDataCreator.o
+
+# target to build an object file
+lrgFileLoaderDataCreator.cpp.o:
+	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgFileLoaderDataCreator.cpp.o
+.PHONY : lrgFileLoaderDataCreator.cpp.o
+
+lrgFileLoaderDataCreator.i: lrgFileLoaderDataCreator.cpp.i
+
+.PHONY : lrgFileLoaderDataCreator.i
+
+# target to preprocess a source file
+lrgFileLoaderDataCreator.cpp.i:
+	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgFileLoaderDataCreator.cpp.i
+.PHONY : lrgFileLoaderDataCreator.cpp.i
+
+lrgFileLoaderDataCreator.s: lrgFileLoaderDataCreator.cpp.s
+
+.PHONY : lrgFileLoaderDataCreator.s
+
+# target to generate assembly for a file
+lrgFileLoaderDataCreator.cpp.s:
+	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgFileLoaderDataCreator.cpp.s
+.PHONY : lrgFileLoaderDataCreator.cpp.s
+
 lrgGradientDescentSolverStrategy.o: lrgGradientDescentSolverStrategy.cpp.o
 
 .PHONY : lrgGradientDescentSolverStrategy.o
@@ -364,6 +391,9 @@ help:
 	@echo "... lrgException.o"
 	@echo "... lrgException.i"
 	@echo "... lrgException.s"
+	@echo "... lrgFileLoaderDataCreator.o"
+	@echo "... lrgFileLoaderDataCreator.i"
+	@echo "... lrgFileLoaderDataCreator.s"
 	@echo "... lrgGradientDescentSolverStrategy.o"
 	@echo "... lrgGradientDescentSolverStrategy.i"
 	@echo "... lrgGradientDescentSolverStrategy.s"
