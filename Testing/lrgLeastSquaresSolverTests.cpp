@@ -23,7 +23,7 @@
 
  LinearDataCreator data(1,2,1000);
  NormalEquationsSolverStrategy NE;
- GradientDescentSolverStrategy GD(std::make_pair(1, 1),0.1,1000);
+ GradientDescentSolverStrategy GD(1,1,0.1,100);
  std::vector<double> xvec;
 
 TEST_CASE( "Checking the number of returned items is correct", "[LinearDataCreator.GetData()]" ) {
@@ -45,4 +45,14 @@ TEST_CASE( "Checking NE FitData returns finite results", "[NormalEquationsSolver
 TEST_CASE( "Checking NE FitData returns not nan results", "[NormalEquationsSolverStrategy]" ) { 
   REQUIRE( isnan(NE.FitData(data.GetData()).first) == 0); 
   REQUIRE( isnan(NE.FitData(data.GetData()).second) == 0);
+}
+
+TEST_CASE( "Checking GD FitData returns finite results", "[GradientDescent]" ) { 
+  REQUIRE( isinf(GD.FitData(data.GetData()).first) == 0); 
+  REQUIRE( isinf(GD.FitData(data.GetData()).second) == 0);
+}
+
+TEST_CASE( "Checking GD FitData returns not nan results", "[GradientDescent]" ) { 
+  REQUIRE( isnan(GD.FitData(data.GetData()).first) == 0); 
+  REQUIRE( isnan(GD.FitData(data.GetData()).second) == 0);
 }

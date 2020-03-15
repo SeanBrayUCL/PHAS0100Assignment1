@@ -3,17 +3,19 @@
 #include <vector>
 #include <algorithm>
 #include <random>
+#include <Eigen/Dense>
 
 // Date constructor
-GradientDescentSolverStrategy::GradientDescentSolverStrategy(std ::pair<double, double> intialvalue, double learning_rate, int iterations)
+GradientDescentSolverStrategy::GradientDescentSolverStrategy(double intialintercept, double initialslope, double learning_rate, int iterations)
 {
-    SetGradientDescentSolverStrategy(intialvalue, learning_rate, iterations);
+    SetGradientDescentSolverStrategy(intialintercept, initialslope, learning_rate, iterations);
 }
  
 // Date member function
-void GradientDescentSolverStrategy::SetGradientDescentSolverStrategy(std ::pair<double, double> intialvalue, double learning_rate, int iterations)
+void GradientDescentSolverStrategy::SetGradientDescentSolverStrategy(double intialintercept, double initialslope, double learning_rate, int iterations)
 {
-    m_intialvalue = intialvalue;
+    m_intialintercept = intialintercept;
+    m_initialslope = initialslope;
     m_learning_rate = learning_rate;
     m_iterations = iterations;
 }
@@ -22,9 +24,9 @@ std ::pair<double, double>  GradientDescentSolverStrategy ::FitData(std::vector<
 {
  std::vector<double> ones(x.size(), 1);
  int i;
- double learning_rate = this-> getlearning_rate();
- Eigen::MatrixXd m(10,2);
- Eigen::VectorXd y(10);
+ double learning_rate = getlearning_rate();
+ Eigen::MatrixXd m(x.size(),2);
+ Eigen::VectorXd y(x.size());
  Eigen::MatrixXd res(2,1);
 
  for (int i=0; i<x.size(); i++) 
@@ -36,8 +38,8 @@ std ::pair<double, double>  GradientDescentSolverStrategy ::FitData(std::vector<
  for (int i=0; i<x.size(); i++) 
         y(i) = x[i].second;
 
-res(0,0) = this-> getintialvalue().first;
-res(1,0) = this-> getintialvalue().second;
+res(0,0) = 1;
+res(1,0) = 1;
 
 i = 0;
 while(i<this-> getiterations()){

@@ -6,16 +6,18 @@
 class GradientDescentSolverStrategy : public LinearModelSolverStrategy {
 
     private:
-    std ::pair<double, double> m_intialvalue;
-    double  m_learning_rate;
+    double m_intialintercept;
+    double m_initialslope;
+    double m_learning_rate;
     int m_iterations;
 
     public:
-    GradientDescentSolverStrategy(std ::pair<double, double> intialvalue, double learning_rate, int iterations);
+    GradientDescentSolverStrategy(double intialintercept, double initialslope, double learning_rate, int iterations);
  
-    void SetGradientDescentSolverStrategy(std ::pair<double, double> intialvalue, double learning_rate, int iterations);
+    void SetGradientDescentSolverStrategy(double intialintercept, double initialslope, double learning_rate, int iterations);
  
-    std ::pair<double, double> getintialvalue() { return m_intialvalue; }
+    double getintialintercept() { return m_intialintercept; }
+    double getinitialslope() { return m_initialslope; }
     double getlearning_rate() { return m_learning_rate; }
     int getiterations()  { return m_iterations; }
 
