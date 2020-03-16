@@ -1035,11 +1035,13 @@ clean: Code/Lib/CMakeFiles/assignment1.dir/clean
 # Directory level rules for directory Code/CommandLineApps
 
 # Convenience name for "all" pass in the directory.
+Code/CommandLineApps/all: Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/all
 Code/CommandLineApps/all: Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/all
 
 .PHONY : Code/CommandLineApps/all
 
 # Convenience name for "clean" pass in the directory.
+Code/CommandLineApps/clean: Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/clean
 Code/CommandLineApps/clean: Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/clean
 
 .PHONY : Code/CommandLineApps/clean
@@ -1050,13 +1052,50 @@ Code/CommandLineApps/preinstall:
 .PHONY : Code/CommandLineApps/preinstall
 
 #=============================================================================
+# Target rules for target Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir
+
+# All Build rule for target.
+Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/all: Code/Lib/CMakeFiles/assignment1.dir/all
+	$(MAKE) -f Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/build.make Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/depend
+	$(MAKE) -f Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/build.make Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles --progress-num=18,19 "Built target lrgLinearRegression"
+.PHONY : Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/all
+
+# Include target in all.
+all: Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles 0
+.PHONY : Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/rule
+
+# Convenience name for target.
+lrgLinearRegression: Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/rule
+
+.PHONY : lrgLinearRegression
+
+# clean rule for target.
+Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/clean:
+	$(MAKE) -f Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/build.make Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/clean
+.PHONY : Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/clean
+
+# clean rule for target.
+clean: Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir
 
 # All Build rule for target.
 Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/all: Code/Lib/CMakeFiles/assignment1.dir/all
 	$(MAKE) -f Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/build.make Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/depend
 	$(MAKE) -f Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/build.make Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles --progress-num=18,19 "Built target lrgMyFirstApp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles --progress-num=20,21 "Built target lrgMyFirstApp"
 .PHONY : Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/all
 
 # Include target in all.

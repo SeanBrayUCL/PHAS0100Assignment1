@@ -545,6 +545,19 @@ assignment1/fast:
 .PHONY : assignment1/fast
 
 #=============================================================================
+# Target rules for targets named lrgLinearRegression
+
+# Build rule for target.
+lrgLinearRegression: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lrgLinearRegression
+.PHONY : lrgLinearRegression
+
+# fast build rule for target.
+lrgLinearRegression/fast:
+	$(MAKE) -f Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/build.make Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/build
+.PHONY : lrgLinearRegression/fast
+
+#=============================================================================
 # Target rules for targets named lrgMyFirstApp
 
 # Build rule for target.
@@ -638,6 +651,7 @@ help:
 	@echo "... ContinuousUpdate"
 	@echo "... ExperimentalBuild"
 	@echo "... assignment1"
+	@echo "... lrgLinearRegression"
 	@echo "... lrgMyFirstApp"
 	@echo "... lrgCommandLineArgsTest"
 	@echo "... lrgBasicTest"

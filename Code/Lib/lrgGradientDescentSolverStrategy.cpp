@@ -38,16 +38,15 @@ std ::pair<double, double>  GradientDescentSolverStrategy ::FitData(std::vector<
  for (int i=0; i<x.size(); i++) 
         y(i) = x[i].second;
 
-res(0,0) = 1;
-res(1,0) = 1;
+res(0,0) = this-> getintialintercept();
+res(1,0) = this-> getinitialslope();
 
 i = 0;
-while(i<this-> getiterations()){
-    res =res -learning_rate*(1/x.size())*m.transpose()*(m*res-y);
+while(i < this-> getiterations()){
+    res =res - learning_rate*(2.0/x.size())*m.transpose()*(m*res-y);
     i++;
 }
-
-    
+   
 return std::make_pair(res(0,0), res(1,0));
 
 };
