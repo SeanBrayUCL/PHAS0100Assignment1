@@ -1,4 +1,4 @@
-Assignment1
+PHAS0100Assignment 1
 ------------------
 
 [![Build Status](https://travis-ci.com/MattClarkson/Assignment1.svg?branch=master)](https://travis-ci.com/MattClarkson/Assignment1)
@@ -7,31 +7,39 @@ Assignment1
 
 Purpose
 -------
+This is a simple application to perform linear regression. The application can read the input data from a .txt file, and then either perform the regression using the normal equations method, or the gradient descent method. The application also gives the user the option to generate their own test data.
 
-This is a demo project to demonstrate a reasonable folder structure for [CMake](https://cmake.org/) based projects,
-that use [CTest](https://cmake.org/) to run unit tests via [Catch](https://github.com/catchorg/Catch2).
-
-
-Credits
--------
-
-This project was developed as a teaching aid for UCL's ["Research Computing with C++"](http://rits.github-pages.ucl.ac.uk/research-computing-with-cpp/)
-course developed by [Dr. James Hetherington](http://www.ucl.ac.uk/research-it-services/people/james)
-and [Dr. Matt Clarkson](https://iris.ucl.ac.uk/iris/browse/profile?upi=MJCLA42).
 
 Build Instructions
 ------------------
 
-This project itself can be built if you just want to test it. In Linux terms that
-would be:
-``` cmake
-git clone https://github.com/MattClarkson/Assignment1
-mkdir Assignment1-Build
-cd Assignment1-Build
-cmake ../Assignment1
+The project can be built using the following commands:
+```
+git clone https://github.com/SeanBrayUCL/PHAS0100Assignment1  (note: this repository is private, but command would work if public)
+mkdir build
+cd build
+cmake ..
 make
 ```
-But ideally, you should use this as a template to create your own project. To do so,
-please refer to the [CMakeTemplateRenamer](https://github.com/MattClarkson/CMakeTemplateRenamer)
-which will show you how to clone this repository, and rename all the variables to names of your choice.
-Then you would simply build your new project, using cmake, as shown above.
+
+Command Line Interface 
+----------------------
+
+The application has a command line interface which the user can access from within the build folder after running the makes command using the following command:
+
+```
+cd bin
+./lrgLinearRegression  (add arugments)
+```
+If the above run without arugments, instructions outlining how the command line tool should be used will be outputted.
+
+To run the application the user needs to provides two commands summarised below:
+```
+-d or --data MAKE/Address of text file
+-s or --solver NE/GD 
+```
+The --data option is where the user specifies the data to be used. Inputting --data MAKE will create data for the user to use, while --data followed by the address of the text file with input data will read the text file and use the data in the text file.
+
+The --solver option is where the user specifies whether to use the Normal Equations method or the Gradient Descent method to perform the regression. Inputting --solver NE will use the Normal Equations, while --solver GD will use gradient descent.
+
+
