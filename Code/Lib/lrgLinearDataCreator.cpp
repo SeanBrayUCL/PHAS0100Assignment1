@@ -7,16 +7,16 @@
 
  
 // Date constructor
-LinearDataCreator::LinearDataCreator(int parameter1, int parameter2, int numpoints)
+LinearDataCreator::LinearDataCreator(int intercept, int slope, int numpoints)
 {
-    SetLinearDataCreator(parameter1, parameter2, numpoints);
+    SetLinearDataCreator(intercept, slope, numpoints);
 }
  
 // Date member function
-void LinearDataCreator::SetLinearDataCreator(int parameter1, int parameter2, int numpoints)
+void LinearDataCreator::SetLinearDataCreator(int intercept, int slope, int numpoints)
 {
-    m_parameter1 = parameter1;
-    m_parameter2 = parameter2;
+    m_intercept = intercept;
+    m_slope = slope;
     m_numpoints = numpoints;
 }
 
@@ -26,8 +26,8 @@ std ::vector<std::pair<double, double> > LinearDataCreator ::GetData()
   std::vector<double> noise(this-> getnumpoints());
   std::vector<double> test;
   std::vector< std::pair <double,double> > final; 
-  int parameter1 = this-> getparameter1();
-  int parameter2 = this-> getparameter2();
+  int intercept = this-> getintercept();
+  int slope = this-> getslope();
   std::random_device rd; 
   std::mt19937 gen(rd());
   std::uniform_real_distribution<> dis(0.0, 10.0);
@@ -44,7 +44,7 @@ std ::vector<std::pair<double, double> > LinearDataCreator ::GetData()
  
  
     std::transform(x.begin(), x.end(), noise.begin(), std::back_inserter(test),
-               [parameter1, parameter2](double x1, double x2) {return(parameter1*x1 +parameter2+x2);});
+               [slope, intercept](double x1, double x2) {return(intercept + slope*x1 + x2);});
     
     // Entering values in vector of pairs 
     for (int i=0; i<this-> getnumpoints(); i++) 

@@ -60,7 +60,7 @@ int main(int argc, char** argv)
         }
     }
     if (input_data == "MAKE"){
-        LinearDataCreator data(1,1,1000);
+        LinearDataCreator data(2,1,1000);
         if (solver == "NE"){
             std::cout << NE.FitData(data.GetData()).first << " "
              << NE.FitData(data.GetData()).second << std::endl;

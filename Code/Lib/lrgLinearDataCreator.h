@@ -5,17 +5,17 @@
 class LinearDataCreator : public DataCreator {
         
 private:
-    int m_parameter1;
-    int m_parameter2;
+    int m_intercept;
+    int m_slope;
     int m_numpoints;
  
 public:
-    LinearDataCreator(int parameter1, int parameter2, int numpoints);
+    LinearDataCreator(int intercept, int slope, int numpoints);
  
-    void SetLinearDataCreator(int parameter1, int parameter2, int numpoints);
+    void SetLinearDataCreator(int intercept, int slope, int numpoints);
  
-    int getparameter1() { return m_parameter1; }
-    int getparameter2() { return m_parameter2; }
+    int getintercept() { return m_intercept; }
+    int getslope() { return m_slope; }
     int getnumpoints()  { return m_numpoints; }
 
     std ::vector<std::pair<double, double> > GetData();
