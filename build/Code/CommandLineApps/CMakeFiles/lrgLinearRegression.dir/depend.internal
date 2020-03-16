@@ -205,9 +205,12 @@ Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/lrgLinearRegression.cpp.
  ../Code/3rdParty/Eigen-3.2.2.1/Eigen/src/plugins/MatrixCwiseBinaryOps.h
  ../Code/3rdParty/Eigen-3.2.2.1/Eigen/src/plugins/MatrixCwiseUnaryOps.h
  ../Code/Lib/lrgDataCreatorI.h
+ ../Code/Lib/lrgException.h
+ ../Code/Lib/lrgExceptionMacro.h
  ../Code/Lib/lrgFileLoaderDataCreator.h
  ../Code/Lib/lrgGradientDescentSolverStrategy.h
  ../Code/Lib/lrgLinearDataCreator.h
  ../Code/Lib/lrgLinearModelSolverStrategyI.h
  ../Code/Lib/lrgNormalEquationsSolverStrategy.h
+ ../Code/Lib/lrgWin32ExportHeader.h
  /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/CommandLineApps/lrgLinearRegression.cpp

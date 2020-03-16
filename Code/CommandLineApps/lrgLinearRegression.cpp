@@ -4,6 +4,7 @@
 #include "lrgNormalEquationsSolverStrategy.h"
 #include "lrgGradientDescentSolverStrategy.h"
 #include "lrgFileLoaderDataCreator.h"
+#include <lrgExceptionMacro.h>
 
 static void show_usage(std:: string name)
 {
@@ -18,6 +19,12 @@ static void show_usage(std:: string name)
 
 int main(int argc, char** argv)
 {
+    int returnStatus = EXIT_FAILURE;
+
+    try
+  {
+
+
     if (argc < 4){
         show_usage(argv[0]);
         return 1;
@@ -78,5 +85,17 @@ int main(int argc, char** argv)
         return 0;
         }
     }
-return 0;
+returnStatus = EXIT_SUCCESS;
+  }
+
+  catch (lrg::Exception& e)
+  {
+    std::cerr << "Caught lrg::Exception: " << e.GetDescription() << std::endl;
+  }
+  catch (std::exception& e)
+  {
+    std::cerr << "Caught std::exception: " << e.what() << std::endl;
+  }
+
+return returnStatus;
 }

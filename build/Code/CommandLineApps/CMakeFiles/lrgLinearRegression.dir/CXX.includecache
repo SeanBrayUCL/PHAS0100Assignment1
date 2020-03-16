@@ -1020,6 +1020,20 @@ Eigen/src/Core/util/MKL_support.h
 vector
 -
 
+../Code/Lib/lrgException.h
+lrgWin32ExportHeader.h
+../Code/Lib/lrgWin32ExportHeader.h
+stdexcept
+-
+ostream
+-
+sstream
+-
+
+../Code/Lib/lrgExceptionMacro.h
+lrgException.h
+../Code/Lib/lrgException.h
+
 ../Code/Lib/lrgFileLoaderDataCreator.h
 lrgDataCreatorI.h
 ../Code/Lib/lrgDataCreatorI.h
@@ -1054,6 +1068,8 @@ lrgLinearModelSolverStrategyI.h
 vector
 -
 
+../Code/Lib/lrgWin32ExportHeader.h
+
 /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/CommandLineApps/lrgLinearRegression.cpp
 iostream
 -
@@ -1067,4 +1083,6 @@ lrgGradientDescentSolverStrategy.h
 /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/CommandLineApps/lrgGradientDescentSolverStrategy.h
 lrgFileLoaderDataCreator.h
 /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/CommandLineApps/lrgFileLoaderDataCreator.h
+lrgExceptionMacro.h
+-
 
