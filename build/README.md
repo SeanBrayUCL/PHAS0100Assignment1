@@ -33,12 +33,12 @@ cd bin
 ```
 If the above is run without any arugments, instructions outlining how the command line tool should be used will be outputted.
 
-To run the application the user needs to provides two commands summarised below:
+To run the application the user needs to provide two commands summarised below:
 ```
 -d or --data MAKE/Address of text file
 -s or --solver NE/GD 
 ```
-The --data option is where the user specifies the data to be used. Inputting --data MAKE will create data for the user to use, while --data followed by the address of the text file with input data will read the text file and use the data in the text file.
+The --data option is where the user specifies the data to be used. Inputting --data MAKE will create data for the user to use, while --data followed by the address of the text file with the input data will read the text file and the data in the file.
 
 The --solver option is where the user specifies whether to use the Normal Equations method or the Gradient Descent method to perform the regression. Inputting --solver NE will use the Normal Equations, while --solver GD will use gradient descent.
 
@@ -52,7 +52,7 @@ LinearDataCreator data(2,1,1000);
 where 2 refers to the slope, 1 the intercept and 1000 the number of pairs created. These paramters can be updated for the command line tool, by updating the above expression and making the application again.
 
 
-The default setting for the gradient descent solver invoked by -s GD command is an inital slope of 2, an intial intercept of 1, a learning rate of 0.01, and a 1000 iteratons of the algorithm. These paramters can be updated by going to the script Assignment1/Code/CommandLine/Apps/lrgLinearRegression.cpp . On line 36 of this script the user will see 
+The default setting for the gradient descent solver invoked by -s GD command is an inital slope of 2, an intial intercept of 1, a learning rate of 0.01, and 1000 iteratons of the algorithm. These paramters can be updated by going to the script Assignment1/Code/CommandLine/Apps/lrgLinearRegression.cpp . On line 36 of this script the user will see 
 
 ```
 GradientDescentSolverStrategy GD(1,2,0.01,1000);

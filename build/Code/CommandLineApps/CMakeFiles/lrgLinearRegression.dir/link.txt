@@ -1,1 +1,1 @@
-/usr/bin/c++    -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations -O3 -DNDEBUG   CMakeFiles/lrgLinearRegression.dir/lrgLinearRegression.cpp.o  -o ../../bin/lrgLinearRegression ../../bin/libassignment1.a 
+/usr/bin/c++    -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations -O3 -DNDEBUG   CMakeFiles/lrgLinearRegression.dir/lrgLinearRegression.cpp.o  -o ../../bin/lrgLinearRegression ../../bin/libassignment1.a 
