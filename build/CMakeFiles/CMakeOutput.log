@@ -679,3 +679,21 @@ make[1]: Leaving directory '/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignmen
 
 Source file was:
 int main() { return 0; }
+Performing C++ SOURCE FILE Test HAS_FLAG_-std=c11 succeeded with the following output:
+Change Dir: /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ccd7b/fast"
+make[1]: Entering directory '/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_ccd7b.dir/build.make CMakeFiles/cmTC_ccd7b.dir/build
+make[2]: Entering directory '/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ccd7b.dir/src.cxx.o
+/usr/bin/c++    -Wno-deprecated-declarations  -Wno-deprecated-declarations -DHAS_FLAG_-std=c11   -std=c++11 -o CMakeFiles/cmTC_ccd7b.dir/src.cxx.o -c /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:10: warning: ISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_ccd7b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ccd7b.dir/link.txt --verbose=1
+/usr/bin/c++    -Wno-deprecated-declarations  -Wno-deprecated-declarations -DHAS_FLAG_-std=c11    CMakeFiles/cmTC_ccd7b.dir/src.cxx.o  -o cmTC_ccd7b 
+make[2]: Leaving directory '/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
