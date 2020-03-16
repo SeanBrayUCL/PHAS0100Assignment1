@@ -15,8 +15,6 @@
 set(ASSIGNMENT1_LIBRARY_NAME assignment1)
 
 set(ASSIGNMENT1_LIBRARY_SRCS
-  lrgBasicTypes.cpp
-  lrgMyFunctions.cpp
   lrgException.cpp
   lrgLinearDataCreator.cpp
   lrgNormalEquationsSolverStrategy.cpp

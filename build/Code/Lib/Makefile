@@ -182,33 +182,6 @@ assignment1/fast:
 	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/build
 .PHONY : assignment1/fast
 
-lrgBasicTypes.o: lrgBasicTypes.cpp.o
-
-.PHONY : lrgBasicTypes.o
-
-# target to build an object file
-lrgBasicTypes.cpp.o:
-	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgBasicTypes.cpp.o
-.PHONY : lrgBasicTypes.cpp.o
-
-lrgBasicTypes.i: lrgBasicTypes.cpp.i
-
-.PHONY : lrgBasicTypes.i
-
-# target to preprocess a source file
-lrgBasicTypes.cpp.i:
-	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgBasicTypes.cpp.i
-.PHONY : lrgBasicTypes.cpp.i
-
-lrgBasicTypes.s: lrgBasicTypes.cpp.s
-
-.PHONY : lrgBasicTypes.s
-
-# target to generate assembly for a file
-lrgBasicTypes.cpp.s:
-	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgBasicTypes.cpp.s
-.PHONY : lrgBasicTypes.cpp.s
-
 lrgException.o: lrgException.cpp.o
 
 .PHONY : lrgException.o
@@ -317,33 +290,6 @@ lrgLinearDataCreator.cpp.s:
 	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgLinearDataCreator.cpp.s
 .PHONY : lrgLinearDataCreator.cpp.s
 
-lrgMyFunctions.o: lrgMyFunctions.cpp.o
-
-.PHONY : lrgMyFunctions.o
-
-# target to build an object file
-lrgMyFunctions.cpp.o:
-	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgMyFunctions.cpp.o
-.PHONY : lrgMyFunctions.cpp.o
-
-lrgMyFunctions.i: lrgMyFunctions.cpp.i
-
-.PHONY : lrgMyFunctions.i
-
-# target to preprocess a source file
-lrgMyFunctions.cpp.i:
-	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgMyFunctions.cpp.i
-.PHONY : lrgMyFunctions.cpp.i
-
-lrgMyFunctions.s: lrgMyFunctions.cpp.s
-
-.PHONY : lrgMyFunctions.s
-
-# target to generate assembly for a file
-lrgMyFunctions.cpp.s:
-	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/lrgMyFunctions.cpp.s
-.PHONY : lrgMyFunctions.cpp.s
-
 lrgNormalEquationsSolverStrategy.o: lrgNormalEquationsSolverStrategy.cpp.o
 
 .PHONY : lrgNormalEquationsSolverStrategy.o
@@ -385,9 +331,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... install"
-	@echo "... lrgBasicTypes.o"
-	@echo "... lrgBasicTypes.i"
-	@echo "... lrgBasicTypes.s"
 	@echo "... lrgException.o"
 	@echo "... lrgException.i"
 	@echo "... lrgException.s"
@@ -400,9 +343,6 @@ help:
 	@echo "... lrgLinearDataCreator.o"
 	@echo "... lrgLinearDataCreator.i"
 	@echo "... lrgLinearDataCreator.s"
-	@echo "... lrgMyFunctions.o"
-	@echo "... lrgMyFunctions.i"
-	@echo "... lrgMyFunctions.s"
 	@echo "... lrgNormalEquationsSolverStrategy.o"
 	@echo "... lrgNormalEquationsSolverStrategy.i"
 	@echo "... lrgNormalEquationsSolverStrategy.s"

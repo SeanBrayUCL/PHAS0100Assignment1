@@ -1001,7 +1001,7 @@ Code/Lib/preinstall:
 Code/Lib/CMakeFiles/assignment1.dir/all:
 	$(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/depend
 	$(MAKE) -f Code/Lib/CMakeFiles/assignment1.dir/build.make Code/Lib/CMakeFiles/assignment1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target assignment1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target assignment1"
 .PHONY : Code/Lib/CMakeFiles/assignment1.dir/all
 
 # Include target in all.
@@ -1011,7 +1011,7 @@ all: Code/Lib/CMakeFiles/assignment1.dir/all
 
 # Build rule for subdir invocation for target.
 Code/Lib/CMakeFiles/assignment1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 Code/Lib/CMakeFiles/assignment1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles 0
 .PHONY : Code/Lib/CMakeFiles/assignment1.dir/rule
@@ -1036,13 +1036,11 @@ clean: Code/Lib/CMakeFiles/assignment1.dir/clean
 
 # Convenience name for "all" pass in the directory.
 Code/CommandLineApps/all: Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/all
-Code/CommandLineApps/all: Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/all
 
 .PHONY : Code/CommandLineApps/all
 
 # Convenience name for "clean" pass in the directory.
 Code/CommandLineApps/clean: Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/clean
-Code/CommandLineApps/clean: Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/clean
 
 .PHONY : Code/CommandLineApps/clean
 
@@ -1058,7 +1056,7 @@ Code/CommandLineApps/preinstall:
 Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/all: Code/Lib/CMakeFiles/assignment1.dir/all
 	$(MAKE) -f Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/build.make Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/depend
 	$(MAKE) -f Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/build.make Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles --progress-num=18,19 "Built target lrgLinearRegression"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles --progress-num=10,11 "Built target lrgLinearRegression"
 .PHONY : Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/all
 
 # Include target in all.
@@ -1068,7 +1066,7 @@ all: Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/all
 
 # Build rule for subdir invocation for target.
 Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles 0
 .PHONY : Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/rule
@@ -1089,55 +1087,14 @@ clean: Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir
-
-# All Build rule for target.
-Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/all: Code/Lib/CMakeFiles/assignment1.dir/all
-	$(MAKE) -f Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/build.make Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/depend
-	$(MAKE) -f Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/build.make Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles --progress-num=20,21 "Built target lrgMyFirstApp"
-.PHONY : Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/all
-
-# Include target in all.
-all: Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles 10
-	$(MAKE) -f CMakeFiles/Makefile2 Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles 0
-.PHONY : Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/rule
-
-# Convenience name for target.
-lrgMyFirstApp: Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/rule
-
-.PHONY : lrgMyFirstApp
-
-# clean rule for target.
-Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/clean:
-	$(MAKE) -f Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/build.make Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/clean
-.PHONY : Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/clean
-
-# clean rule for target.
-clean: Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Directory level rules for directory Testing
 
 # Convenience name for "all" pass in the directory.
-Testing/all: Testing/CMakeFiles/lrgCommandLineArgsTest.dir/all
-Testing/all: Testing/CMakeFiles/lrgBasicTest.dir/all
 Testing/all: Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/all
 
 .PHONY : Testing/all
 
 # Convenience name for "clean" pass in the directory.
-Testing/clean: Testing/CMakeFiles/lrgCommandLineArgsTest.dir/clean
-Testing/clean: Testing/CMakeFiles/lrgBasicTest.dir/clean
 Testing/clean: Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/clean
 
 .PHONY : Testing/clean
@@ -1148,87 +1105,13 @@ Testing/preinstall:
 .PHONY : Testing/preinstall
 
 #=============================================================================
-# Target rules for target Testing/CMakeFiles/lrgCommandLineArgsTest.dir
-
-# All Build rule for target.
-Testing/CMakeFiles/lrgCommandLineArgsTest.dir/all: Code/Lib/CMakeFiles/assignment1.dir/all
-	$(MAKE) -f Testing/CMakeFiles/lrgCommandLineArgsTest.dir/build.make Testing/CMakeFiles/lrgCommandLineArgsTest.dir/depend
-	$(MAKE) -f Testing/CMakeFiles/lrgCommandLineArgsTest.dir/build.make Testing/CMakeFiles/lrgCommandLineArgsTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles --progress-num=12,13,14 "Built target lrgCommandLineArgsTest"
-.PHONY : Testing/CMakeFiles/lrgCommandLineArgsTest.dir/all
-
-# Include target in all.
-all: Testing/CMakeFiles/lrgCommandLineArgsTest.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-Testing/CMakeFiles/lrgCommandLineArgsTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles 11
-	$(MAKE) -f CMakeFiles/Makefile2 Testing/CMakeFiles/lrgCommandLineArgsTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles 0
-.PHONY : Testing/CMakeFiles/lrgCommandLineArgsTest.dir/rule
-
-# Convenience name for target.
-lrgCommandLineArgsTest: Testing/CMakeFiles/lrgCommandLineArgsTest.dir/rule
-
-.PHONY : lrgCommandLineArgsTest
-
-# clean rule for target.
-Testing/CMakeFiles/lrgCommandLineArgsTest.dir/clean:
-	$(MAKE) -f Testing/CMakeFiles/lrgCommandLineArgsTest.dir/build.make Testing/CMakeFiles/lrgCommandLineArgsTest.dir/clean
-.PHONY : Testing/CMakeFiles/lrgCommandLineArgsTest.dir/clean
-
-# clean rule for target.
-clean: Testing/CMakeFiles/lrgCommandLineArgsTest.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target Testing/CMakeFiles/lrgBasicTest.dir
-
-# All Build rule for target.
-Testing/CMakeFiles/lrgBasicTest.dir/all: Code/Lib/CMakeFiles/assignment1.dir/all
-	$(MAKE) -f Testing/CMakeFiles/lrgBasicTest.dir/build.make Testing/CMakeFiles/lrgBasicTest.dir/depend
-	$(MAKE) -f Testing/CMakeFiles/lrgBasicTest.dir/build.make Testing/CMakeFiles/lrgBasicTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles --progress-num=9,10,11 "Built target lrgBasicTest"
-.PHONY : Testing/CMakeFiles/lrgBasicTest.dir/all
-
-# Include target in all.
-all: Testing/CMakeFiles/lrgBasicTest.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-Testing/CMakeFiles/lrgBasicTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles 11
-	$(MAKE) -f CMakeFiles/Makefile2 Testing/CMakeFiles/lrgBasicTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles 0
-.PHONY : Testing/CMakeFiles/lrgBasicTest.dir/rule
-
-# Convenience name for target.
-lrgBasicTest: Testing/CMakeFiles/lrgBasicTest.dir/rule
-
-.PHONY : lrgBasicTest
-
-# clean rule for target.
-Testing/CMakeFiles/lrgBasicTest.dir/clean:
-	$(MAKE) -f Testing/CMakeFiles/lrgBasicTest.dir/build.make Testing/CMakeFiles/lrgBasicTest.dir/clean
-.PHONY : Testing/CMakeFiles/lrgBasicTest.dir/clean
-
-# clean rule for target.
-clean: Testing/CMakeFiles/lrgBasicTest.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir
 
 # All Build rule for target.
 Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/all: Code/Lib/CMakeFiles/assignment1.dir/all
 	$(MAKE) -f Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/build.make Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/depend
 	$(MAKE) -f Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/build.make Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles --progress-num=15,16,17 "Built target lrgLeastSquaresSolverTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles --progress-num=7,8,9 "Built target lrgLeastSquaresSolverTests"
 .PHONY : Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/all
 
 # Include target in all.
@@ -1238,7 +1121,7 @@ all: Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/all
 
 # Build rule for subdir invocation for target.
 Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles 0
 .PHONY : Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/rule

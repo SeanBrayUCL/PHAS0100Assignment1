@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/assignment1.dir/lrgBasicTypes.cpp.o"
-  "CMakeFiles/assignment1.dir/lrgMyFunctions.cpp.o"
   "CMakeFiles/assignment1.dir/lrgException.cpp.o"
   "CMakeFiles/assignment1.dir/lrgLinearDataCreator.cpp.o"
   "CMakeFiles/assignment1.dir/lrgNormalEquationsSolverStrategy.cpp.o"

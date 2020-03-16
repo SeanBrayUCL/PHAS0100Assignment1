@@ -68,39 +68,6 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"CONFIG\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -124,6 +91,27 @@ test/fast: test
 
 .PHONY : test/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"CONFIG\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -134,6 +122,18 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,36 +168,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-Testing/CMakeFiles/lrgCommandLineArgsTest.dir/rule:
-	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f CMakeFiles/Makefile2 Testing/CMakeFiles/lrgCommandLineArgsTest.dir/rule
-.PHONY : Testing/CMakeFiles/lrgCommandLineArgsTest.dir/rule
-
-# Convenience name for target.
-lrgCommandLineArgsTest: Testing/CMakeFiles/lrgCommandLineArgsTest.dir/rule
-
-.PHONY : lrgCommandLineArgsTest
-
-# fast build rule for target.
-lrgCommandLineArgsTest/fast:
-	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Testing/CMakeFiles/lrgCommandLineArgsTest.dir/build.make Testing/CMakeFiles/lrgCommandLineArgsTest.dir/build
-.PHONY : lrgCommandLineArgsTest/fast
-
-# Convenience name for target.
-Testing/CMakeFiles/lrgBasicTest.dir/rule:
-	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f CMakeFiles/Makefile2 Testing/CMakeFiles/lrgBasicTest.dir/rule
-.PHONY : Testing/CMakeFiles/lrgBasicTest.dir/rule
-
-# Convenience name for target.
-lrgBasicTest: Testing/CMakeFiles/lrgBasicTest.dir/rule
-
-.PHONY : lrgBasicTest
-
-# fast build rule for target.
-lrgBasicTest/fast:
-	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Testing/CMakeFiles/lrgBasicTest.dir/build.make Testing/CMakeFiles/lrgBasicTest.dir/build
-.PHONY : lrgBasicTest/fast
-
-# Convenience name for target.
 Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/rule:
 	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f CMakeFiles/Makefile2 Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/rule
 .PHONY : Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/rule
@@ -212,41 +182,12 @@ lrgLeastSquaresSolverTests/fast:
 	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/build.make Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/build
 .PHONY : lrgLeastSquaresSolverTests/fast
 
-lrgBasicTest.o: lrgBasicTest.cpp.o
-
-.PHONY : lrgBasicTest.o
-
-# target to build an object file
-lrgBasicTest.cpp.o:
-	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Testing/CMakeFiles/lrgBasicTest.dir/build.make Testing/CMakeFiles/lrgBasicTest.dir/lrgBasicTest.cpp.o
-.PHONY : lrgBasicTest.cpp.o
-
-lrgBasicTest.i: lrgBasicTest.cpp.i
-
-.PHONY : lrgBasicTest.i
-
-# target to preprocess a source file
-lrgBasicTest.cpp.i:
-	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Testing/CMakeFiles/lrgBasicTest.dir/build.make Testing/CMakeFiles/lrgBasicTest.dir/lrgBasicTest.cpp.i
-.PHONY : lrgBasicTest.cpp.i
-
-lrgBasicTest.s: lrgBasicTest.cpp.s
-
-.PHONY : lrgBasicTest.s
-
-# target to generate assembly for a file
-lrgBasicTest.cpp.s:
-	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Testing/CMakeFiles/lrgBasicTest.dir/build.make Testing/CMakeFiles/lrgBasicTest.dir/lrgBasicTest.cpp.s
-.PHONY : lrgBasicTest.cpp.s
-
 lrgCatchMain.o: lrgCatchMain.cpp.o
 
 .PHONY : lrgCatchMain.o
 
 # target to build an object file
 lrgCatchMain.cpp.o:
-	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Testing/CMakeFiles/lrgCommandLineArgsTest.dir/build.make Testing/CMakeFiles/lrgCommandLineArgsTest.dir/lrgCatchMain.cpp.o
-	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Testing/CMakeFiles/lrgBasicTest.dir/build.make Testing/CMakeFiles/lrgBasicTest.dir/lrgCatchMain.cpp.o
 	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/build.make Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/lrgCatchMain.cpp.o
 .PHONY : lrgCatchMain.cpp.o
 
@@ -256,8 +197,6 @@ lrgCatchMain.i: lrgCatchMain.cpp.i
 
 # target to preprocess a source file
 lrgCatchMain.cpp.i:
-	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Testing/CMakeFiles/lrgCommandLineArgsTest.dir/build.make Testing/CMakeFiles/lrgCommandLineArgsTest.dir/lrgCatchMain.cpp.i
-	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Testing/CMakeFiles/lrgBasicTest.dir/build.make Testing/CMakeFiles/lrgBasicTest.dir/lrgCatchMain.cpp.i
 	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/build.make Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/lrgCatchMain.cpp.i
 .PHONY : lrgCatchMain.cpp.i
 
@@ -267,37 +206,8 @@ lrgCatchMain.s: lrgCatchMain.cpp.s
 
 # target to generate assembly for a file
 lrgCatchMain.cpp.s:
-	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Testing/CMakeFiles/lrgCommandLineArgsTest.dir/build.make Testing/CMakeFiles/lrgCommandLineArgsTest.dir/lrgCatchMain.cpp.s
-	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Testing/CMakeFiles/lrgBasicTest.dir/build.make Testing/CMakeFiles/lrgBasicTest.dir/lrgCatchMain.cpp.s
 	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/build.make Testing/CMakeFiles/lrgLeastSquaresSolverTests.dir/lrgCatchMain.cpp.s
 .PHONY : lrgCatchMain.cpp.s
-
-lrgCommandLineArgsTest.o: lrgCommandLineArgsTest.cpp.o
-
-.PHONY : lrgCommandLineArgsTest.o
-
-# target to build an object file
-lrgCommandLineArgsTest.cpp.o:
-	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Testing/CMakeFiles/lrgCommandLineArgsTest.dir/build.make Testing/CMakeFiles/lrgCommandLineArgsTest.dir/lrgCommandLineArgsTest.cpp.o
-.PHONY : lrgCommandLineArgsTest.cpp.o
-
-lrgCommandLineArgsTest.i: lrgCommandLineArgsTest.cpp.i
-
-.PHONY : lrgCommandLineArgsTest.i
-
-# target to preprocess a source file
-lrgCommandLineArgsTest.cpp.i:
-	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Testing/CMakeFiles/lrgCommandLineArgsTest.dir/build.make Testing/CMakeFiles/lrgCommandLineArgsTest.dir/lrgCommandLineArgsTest.cpp.i
-.PHONY : lrgCommandLineArgsTest.cpp.i
-
-lrgCommandLineArgsTest.s: lrgCommandLineArgsTest.cpp.s
-
-.PHONY : lrgCommandLineArgsTest.s
-
-# target to generate assembly for a file
-lrgCommandLineArgsTest.cpp.s:
-	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Testing/CMakeFiles/lrgCommandLineArgsTest.dir/build.make Testing/CMakeFiles/lrgCommandLineArgsTest.dir/lrgCommandLineArgsTest.cpp.s
-.PHONY : lrgCommandLineArgsTest.cpp.s
 
 lrgLeastSquaresSolverTests.o: lrgLeastSquaresSolverTests.cpp.o
 
@@ -333,24 +243,16 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... install"
-	@echo "... list_install_components"
-	@echo "... lrgCommandLineArgsTest"
-	@echo "... edit_cache"
-	@echo "... lrgBasicTest"
-	@echo "... lrgLeastSquaresSolverTests"
 	@echo "... install/local"
 	@echo "... test"
+	@echo "... list_install_components"
+	@echo "... lrgLeastSquaresSolverTests"
+	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... lrgBasicTest.o"
-	@echo "... lrgBasicTest.i"
-	@echo "... lrgBasicTest.s"
+	@echo "... install"
 	@echo "... lrgCatchMain.o"
 	@echo "... lrgCatchMain.i"
 	@echo "... lrgCatchMain.s"
-	@echo "... lrgCommandLineArgsTest.o"
-	@echo "... lrgCommandLineArgsTest.i"
-	@echo "... lrgCommandLineArgsTest.s"
 	@echo "... lrgLeastSquaresSolverTests.o"
 	@echo "... lrgLeastSquaresSolverTests.i"
 	@echo "... lrgLeastSquaresSolverTests.s"

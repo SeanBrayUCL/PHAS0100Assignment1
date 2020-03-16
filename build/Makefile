@@ -558,45 +558,6 @@ lrgLinearRegression/fast:
 .PHONY : lrgLinearRegression/fast
 
 #=============================================================================
-# Target rules for targets named lrgMyFirstApp
-
-# Build rule for target.
-lrgMyFirstApp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lrgMyFirstApp
-.PHONY : lrgMyFirstApp
-
-# fast build rule for target.
-lrgMyFirstApp/fast:
-	$(MAKE) -f Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/build.make Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/build
-.PHONY : lrgMyFirstApp/fast
-
-#=============================================================================
-# Target rules for targets named lrgCommandLineArgsTest
-
-# Build rule for target.
-lrgCommandLineArgsTest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lrgCommandLineArgsTest
-.PHONY : lrgCommandLineArgsTest
-
-# fast build rule for target.
-lrgCommandLineArgsTest/fast:
-	$(MAKE) -f Testing/CMakeFiles/lrgCommandLineArgsTest.dir/build.make Testing/CMakeFiles/lrgCommandLineArgsTest.dir/build
-.PHONY : lrgCommandLineArgsTest/fast
-
-#=============================================================================
-# Target rules for targets named lrgBasicTest
-
-# Build rule for target.
-lrgBasicTest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lrgBasicTest
-.PHONY : lrgBasicTest
-
-# fast build rule for target.
-lrgBasicTest/fast:
-	$(MAKE) -f Testing/CMakeFiles/lrgBasicTest.dir/build.make Testing/CMakeFiles/lrgBasicTest.dir/build
-.PHONY : lrgBasicTest/fast
-
-#=============================================================================
 # Target rules for targets named lrgLeastSquaresSolverTests
 
 # Build rule for target.
@@ -652,9 +613,6 @@ help:
 	@echo "... ExperimentalBuild"
 	@echo "... assignment1"
 	@echo "... lrgLinearRegression"
-	@echo "... lrgMyFirstApp"
-	@echo "... lrgCommandLineArgsTest"
-	@echo "... lrgBasicTest"
 	@echo "... lrgLeastSquaresSolverTests"
 .PHONY : help
 

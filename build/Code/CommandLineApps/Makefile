@@ -68,18 +68,6 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -135,6 +123,18 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
 # The main all target
 all: cmake_check_build_system
 	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/CMakeFiles /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build/Code/CommandLineApps/CMakeFiles/progress.marks
@@ -182,21 +182,6 @@ lrgLinearRegression/fast:
 	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/build.make Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/build
 .PHONY : lrgLinearRegression/fast
 
-# Convenience name for target.
-Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/rule:
-	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f CMakeFiles/Makefile2 Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/rule
-.PHONY : Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/rule
-
-# Convenience name for target.
-lrgMyFirstApp: Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/rule
-
-.PHONY : lrgMyFirstApp
-
-# fast build rule for target.
-lrgMyFirstApp/fast:
-	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/build.make Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/build
-.PHONY : lrgMyFirstApp/fast
-
 lrgLinearRegression.o: lrgLinearRegression.cpp.o
 
 .PHONY : lrgLinearRegression.o
@@ -224,33 +209,6 @@ lrgLinearRegression.cpp.s:
 	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/build.make Code/CommandLineApps/CMakeFiles/lrgLinearRegression.dir/lrgLinearRegression.cpp.s
 .PHONY : lrgLinearRegression.cpp.s
 
-lrgMyFirstApp.o: lrgMyFirstApp.cpp.o
-
-.PHONY : lrgMyFirstApp.o
-
-# target to build an object file
-lrgMyFirstApp.cpp.o:
-	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/build.make Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/lrgMyFirstApp.cpp.o
-.PHONY : lrgMyFirstApp.cpp.o
-
-lrgMyFirstApp.i: lrgMyFirstApp.cpp.i
-
-.PHONY : lrgMyFirstApp.i
-
-# target to preprocess a source file
-lrgMyFirstApp.cpp.i:
-	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/build.make Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/lrgMyFirstApp.cpp.i
-.PHONY : lrgMyFirstApp.cpp.i
-
-lrgMyFirstApp.s: lrgMyFirstApp.cpp.s
-
-.PHONY : lrgMyFirstApp.s
-
-# target to generate assembly for a file
-lrgMyFirstApp.cpp.s:
-	cd /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/build && $(MAKE) -f Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/build.make Code/CommandLineApps/CMakeFiles/lrgMyFirstApp.dir/lrgMyFirstApp.cpp.s
-.PHONY : lrgMyFirstApp.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -258,20 +216,16 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... install"
-	@echo "... lrgLinearRegression"
 	@echo "... install/local"
 	@echo "... test"
+	@echo "... lrgLinearRegression"
 	@echo "... list_install_components"
-	@echo "... lrgMyFirstApp"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... install"
 	@echo "... lrgLinearRegression.o"
 	@echo "... lrgLinearRegression.i"
 	@echo "... lrgLinearRegression.s"
-	@echo "... lrgMyFirstApp.o"
-	@echo "... lrgMyFirstApp.i"
-	@echo "... lrgMyFirstApp.s"
 .PHONY : help
 
 

@@ -1016,14 +1016,6 @@ Eigen/src/Core/util/MKL_support.h
 
 ../Code/3rdParty/Eigen-3.2.2.1/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 
-/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgBasicTypes.cpp
-lrgBasicTypes.h
-/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgBasicTypes.h
-
-/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgBasicTypes.h
-lrgWin32ExportHeader.h
-/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgWin32ExportHeader.h
-
 /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgDataCreatorI.h
 vector
 -
@@ -1101,16 +1093,6 @@ vector
 /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgLinearModelSolverStrategyI.h
 vector
 -
-
-/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgMyFunctions.cpp
-lrgMyFunctions.h
-/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgMyFunctions.h
-iostream
--
-
-/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgMyFunctions.h
-lrgWin32ExportHeader.h
-/home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgWin32ExportHeader.h
 
 /home/seanbray/UCL/C++/PHAS0100Assignment1/Assignment1/Code/Lib/lrgNormalEquationsSolverStrategy.cpp
 lrgNormalEquationsSolverStrategy.h
