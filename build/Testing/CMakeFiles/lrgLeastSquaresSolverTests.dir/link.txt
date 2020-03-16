@@ -1,1 +1,0 @@
-/usr/bin/c++    -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations  -Wno-deprecated-declarations -O3 -DNDEBUG   CMakeFiles/lrgLeastSquaresSolverTests.dir/lrgLeastSquaresSolverTests.cpp.o CMakeFiles/lrgLeastSquaresSolverTests.dir/lrgCatchMain.cpp.o  -o ../bin/lrgLeastSquaresSolverTests ../bin/libassignment1.a 

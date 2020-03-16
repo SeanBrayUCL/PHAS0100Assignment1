@@ -12,10 +12,9 @@ This is a simple application to perform linear regression. The application can r
 
 Build Instructions
 ------------------
-
-The project can be built using the following commands:
+When sitting in the git repository PHAS0100Assingment1/Assignment1,
+the project can be built using the following commands:
 ```
-git clone https://github.com/SeanBrayUCL/PHAS0100Assignment1  (note: this repository is private, but command would work if public)
 mkdir build
 cd build
 cmake ..
